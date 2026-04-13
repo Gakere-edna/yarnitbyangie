@@ -1,0 +1,253 @@
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 20px;
+  max-width: 100%;
+  margin: 40px auto; /* centers it */
+}
+
+.image-grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.grid-item {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* makes them square 😍 */
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.grid-item:hover img {
+  transform: scale(1.1);
+}
+
+.grid-item:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* hover effect */
+.image-grid img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 20px rgba(180,27,121,0.5);
+}
+
+.custom-navbar {
+    /* background-color: linear-gradient(90deg, #fce7f3, #b11bb1); */
+    
+    background-color: rgba(243, 232, 255, 0.8);
+    backdrop-filter: blur(10px);
+
+}
+
+.full-width-img {
+    width: 100%;
+    height: 300px; /* control how tall it is */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.custom-btn {
+    background-color: #b9b4be;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.custom-btn:hover {
+    background-color:  #495057;
+    transform: scale(1.05);
+}
+
+
+.custom-btn {
+    background-color: #f889e7;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.custom-btn:hover {
+    background-color: #e1b7e1;
+    transform: scale(1.05);
+}
+
+
+
+/* CAROUSEL IMAGE */
+.carousel-img {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.4s ease;
+}
+
+/* HOVER ZOOM EFFECT 😍 */
+.carousel-item:hover .carousel-img {
+    transform: scale(1.08);
+}
+
+/* CARD UPGRADE */
+.card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* CARD HOVER */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* DOTS STYLE */
+.carousel-indicators [data-bs-target] {
+    background-color: #565259;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+/* ARROWS SOFTER */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+
+
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color:  #fce7f3;
+}
+
+/* NAVBAR TITLE */
+.navbar {
+  background: linear-gradient(135deg, rgba(201, 190, 198, 0.7), rgba(218, 123, 194, 0.7));
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #38373a !important;
+}
+
+/* .navbar {
+    padding: 1rem 0;
+} */
+
+/* HERO */
+.hero {
+    background: linear-gradient(
+    rgba(192, 132, 252, 0.4), 
+    rgba(255, 192, 203, 0.4)
+),
+url('static/images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+/* CARDS */
+.card {
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.card h5 {
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+.card {
+    border: none;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+.carousel img {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* BUTTON */
+.btn-primary {
+    background-color: #b3a5c1;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #d6cfdc;
+}
+
+/* FOOTER */
+/* footer {
+
+  background: linear-gradient(135deg, #b41b79, #6a1b9a);
+  color: white;
+  padding: 40px; */
+
+/* } */
+
+footer {
+  background: linear-gradient(
+    135deg,
+    rgba(239, 116, 192, 0.8),
+    rgba(118, 80, 164, 0.8)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+  font-style: italic;
+  padding: 50px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fbf6fc;
+    color: white;
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+}
